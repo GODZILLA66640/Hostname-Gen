@@ -1,0 +1,9 @@
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ComputerName\ActiveComputerName
+ComputerName
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName
+ComputerName
+
+//Device name in settings
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Parameters
+Hostname
+NV Hostname
