@@ -64,6 +64,10 @@ reg delete "HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ActiveComputerNam
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ActiveComputerName" /v ComputerName /d !_RndAlphaNum! >Nul
 reg delete "HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName" /v ComputerName /f >Nul
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName" /v ComputerName /d !_RndAlphaNum! >Nul
+reg delete "HKLM\SYSTEM\ControlSet001\Services\Tcpip\Parameters" /v Hostname /f >Nul
+reg add "HKLM\SYSTEM\ControlSet001\Services\Tcpip\Parameters" /v Hostname /d !_RndAlphaNum! >Nul
+reg delete "HKLM\SYSTEM\ControlSet001\Services\Tcpip\Parameters" /v "NV Hostname" /f >Nul
+reg add "HKLM\SYSTEM\ControlSet001\Services\Tcpip\Parameters" /v "NV Hostname" /d !_RndAlphaNum! >Nul
 
 
  exit /b
