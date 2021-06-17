@@ -41,14 +41,16 @@ if !_count! lss %_RNDLength% goto _loop
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do     rem"') do (
   set "DEL=%%a"
 )
-call :colorEcho 0a "==============================="
+call :colorEcho 0f "==============================="
 echo.
-call :colorEcho 0a "["
-call :colorEcho 04 "Your New Hostname is !_RndAlphaNum!"
-call :colorEcho 0a "]"
+call :colorEcho 0f "["
+call :colorEcho 0f "Your New Hostname is"
+call :colorEcho 04 " !_RndAlphaNum!"
+call :colorEcho 0f "]"
 echo.
-call :colorEcho 0a "==============================="
+call :colorEcho 0f "==============================="
 echo.
+call :colorEcho 04 "RESTART YOUR COMPUTER NOW!"
 pause >nul
 exit
 
