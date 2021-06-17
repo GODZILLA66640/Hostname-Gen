@@ -44,7 +44,7 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
 call :colorEcho 0f "==============================="
 echo.
 call :colorEcho 0f "["
-call :colorEcho 0f "Your New Hostname is"
+call :colorEcho 0f "Your new Hostname is"
 call :colorEcho 04 " !_RndAlphaNum!"
 call :colorEcho 0f "]"
 echo.
